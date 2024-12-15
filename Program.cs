@@ -51,7 +51,8 @@ namespace GitHázi
             {
                 if (szamok[i] % 2 == 0)
                 {
-                    paratlanok[i] = szamok[i]++;
+                    szamok[i]++;
+                    paratlanok[i] = szamok[i];
                 }
                 else
                 {
@@ -77,9 +78,6 @@ namespace GitHázi
         {
             int[] szamok = new int[10];
             F01(szamok);
-            //F02(szamok);
-            //F03(szamok);
-            //F04(szamok);
             F05(szamok);
             Console.ReadLine();
         }
