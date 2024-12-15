@@ -1,0 +1,7 @@
+C:\Users\36203\source\repos\GitHázi\GitHázi\bin\Debug\GitHázi.exe.config
+C:\Users\36203\source\repos\GitHázi\GitHázi\bin\Debug\GitHázi.exe
+C:\Users\36203\source\repos\GitHázi\GitHázi\bin\Debug\GitHázi.pdb
+C:\Users\36203\source\repos\GitHázi\GitHázi\obj\Debug\GitHázi.csproj.AssemblyReference.cache
+C:\Users\36203\source\repos\GitHázi\GitHázi\obj\Debug\GitHázi.csproj.CoreCompileInputs.cache
+C:\Users\36203\source\repos\GitHázi\GitHázi\obj\Debug\GitHázi.exe
+C:\Users\36203\source\repos\GitHázi\GitHázi\obj\Debug\GitHázi.pdb

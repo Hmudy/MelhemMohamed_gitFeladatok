@@ -14,7 +14,7 @@ namespace GitHázi
             for (int i = 0; i < szamok.Length; i++)
             {
                 szamok[i] = rnd.Next(1, 51);
-                
+
             }
 
         }
@@ -26,10 +26,8 @@ namespace GitHázi
                 if (szamok[i] % 2 == 0)
                 {
                     szamlalo++;
-                    
+
                 }
-
-
             }
             return szamlalo;
 
@@ -53,8 +51,7 @@ namespace GitHázi
             {
                 if (szamok[i] % 2 == 0)
                 {
-                    szamok[i]++;
-                    paratlanok[i] = szamok[i];
+                    paratlanok[i] = szamok[i]++;
                 }
                 else
                 {
@@ -64,13 +61,27 @@ namespace GitHázi
             }
             return paratlanok;
         }
+        static void F05(int[] szamok)
+        {
+            Console.WriteLine($"ennyi db pozitiv szám van a tömben :  {F02(szamok)}");
+            Console.WriteLine($"A tömb elemeinek átlaga pedig : {F03(szamok):F4}");
+            Console.Write($"a tömböl alkotott páratlan számok:   ");
+            foreach (int paratlan in F04(szamok))
+            {
+                Console.Write($"{paratlan}, ");
+            }
+
+
+        }
         static void Main(string[] args)
         {
             int[] szamok = new int[10];
             F01(szamok);
-            F02(szamok);
-            F03(szamok);
-            F04(szamok);
+            //F02(szamok);
+            //F03(szamok);
+            //F04(szamok);
+            F05(szamok);
+            Console.ReadLine();
         }
     }
 }
