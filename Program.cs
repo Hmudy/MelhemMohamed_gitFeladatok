@@ -18,10 +18,27 @@ namespace GitHázi
             }
 
         }
+        static int F02(int[] szamok)
+        {
+            int szamlalo = 0;
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                if (szamok[i] % 2 == 0)
+                {
+                    szamlalo++;
+                    
+                }
+
+
+            }
+            return szamlalo;
+
+        }
         static void Main(string[] args)
         {
             int[] szamok = new int[10];
             F01(szamok);
+            F02(szamok);
         }
     }
 }
