@@ -45,12 +45,32 @@ namespace GitHázi
             return atlag;
 
         }
+
+        static int[] F04(int[] szamok)
+        {
+            int[] paratlanok = new int[10];
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                if (szamok[i] % 2 == 0)
+                {
+                    szamok[i]++;
+                    paratlanok[i] = szamok[i];
+                }
+                else
+                {
+                    paratlanok[i] = szamok[i];
+                }
+
+            }
+            return paratlanok;
+        }
         static void Main(string[] args)
         {
             int[] szamok = new int[10];
             F01(szamok);
             F02(szamok);
             F03(szamok);
+            F04(szamok);
         }
     }
 }
